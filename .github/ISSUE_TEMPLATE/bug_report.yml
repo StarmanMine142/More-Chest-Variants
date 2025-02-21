@@ -1,12 +1,13 @@
 name: Bug report
 description: Create a report to help us improve
 labels: ["bug"]
+title: "[BUG]: "
 body:
   - type: dropdown
     id: server-only-issue
     attributes:
       label: Does this only occur on a dedicated server?
-      description: i.e. on a local multiplayer server, the issue doesn't happen.
+      description: i.e. on a local singleplayer server, the issue doesn't happen.
       options:
         - Unsure
         - "Yes"

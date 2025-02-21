@@ -8,9 +8,9 @@ body:
       label: Does this only occur on a dedicated server?
       description: i.e. on a local multiplayer server, the issue doesn't happen.
       options:
-        - label: "Yes"
-        - label: "No"
-        - label: "Unsure"
+        - Unsure
+        - Yes
+        - No
     validations:
       required: true
   - type: input
@@ -29,12 +29,24 @@ body:
       placeholder: e.g. 1.20.1
     validations:
       required: true
-  - type: input
+  - type: dropdown
     id: mod-loader
     attributes:
       label: Minecraft Mod Loader
       description: What Mod loader are you using?
-      placeholder: Forge, Fabric, NeoForge.
+      options:
+        - Forge
+        - NeoForge
+        - Fabric
+        - Quilt (not officially supported)
+    validations:
+      required: true
+  - type: input
+    id: mod-loader-version
+    attributes:
+      label: Mod Loader Version
+      description: What Mod Loader Version are you running?
+      placeholder: e.g. (Fabric) v0.16.10
     validations:
       required: true
   - type: textarea

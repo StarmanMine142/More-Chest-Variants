@@ -17,7 +17,7 @@ body:
   - type: input
     id: mod-version
     attributes:
-      label: Minecraft Version
+      label: Mod Version
       description: What version of the Mod is installed?
       placeholder: e.g. 1.5.11 (this is from More Chest Variants, other mods may be lower)
     validations:
@@ -83,7 +83,6 @@ body:
       label: Minecraft Crash Report
       description: Upload the crash report (or the log) to this site and send the link here - https://mclo.gs/
       placeholder: https://mclo.gs/....
-      value: https://mclo.gs/
     validations:
       required: true
   - type: checkboxes

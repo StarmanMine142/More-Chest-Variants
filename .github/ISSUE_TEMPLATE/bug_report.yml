@@ -9,8 +9,8 @@ body:
       description: i.e. on a local multiplayer server, the issue doesn't happen.
       options:
         - Unsure
-        - Yes
-        - No
+        - "Yes"
+        - "No"
     validations:
       required: true
   - type: input
@@ -48,7 +48,7 @@ body:
       description: What Mod Loader Version are you running?
       placeholder: e.g. (Fabric) v0.16.10
     validations:
-      required: true
+      required: false
   - type: textarea
     id: extra-mods
     attributes:
